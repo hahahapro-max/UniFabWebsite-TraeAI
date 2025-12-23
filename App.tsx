@@ -12,11 +12,12 @@ import MvConverterPage from './pages/MvConverterPage';
 import CheckoutPage from './components/checkou/App';
 import { PaymentSuccess } from './components/checkou/components/PaymentSuccess';
 import InstallationGuide from './components/InstallationGuide';
+import RegularProductPage from './pages/RegularProductPage';
 
 export default function App() {
   // Simple client-side routing state
   // Default to 'mv' to show the new page immediately as requested
-  const [page, setPage] = useState<'home' | 'mv' | 'checkout' | 'success' | 'download'>('mv');
+  const [page, setPage] = useState<'home' | 'mv' | 'checkout' | 'success' | 'download' | 'product'>('mv');
 
   // We need to pass the navigation capability to Navbar
   // Since Navbar is currently hardcoded in files, I will wrap the main content 
@@ -42,6 +43,12 @@ export default function App() {
           className={`px-4 py-2 rounded-lg text-xs font-bold shadow-lg transition-all ${page === 'mv' ? 'bg-cyan-500 text-white' : 'bg-slate-800 text-slate-400'}`}
         >
           MV Converter AI
+        </button>
+        <button 
+          onClick={() => setPage('product')} 
+          className={`px-4 py-2 rounded-lg text-xs font-bold shadow-lg transition-all ${page === 'product' ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400'}`}
+        >
+          Regular Product
         </button>
         <button 
           onClick={() => setPage('checkout')} 
@@ -78,6 +85,11 @@ export default function App() {
         </div>
       ) : page === 'mv' ? (
         <MvConverterPage 
+          onBuyNow={() => setPage('checkout')} 
+          onDownload={() => setPage('download')}
+        />
+      ) : page === 'product' ? (
+        <RegularProductPage 
           onBuyNow={() => setPage('checkout')} 
           onDownload={() => setPage('download')}
         />
