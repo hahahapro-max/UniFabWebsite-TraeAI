@@ -335,7 +335,7 @@ export default function InstallationGuide({ onRestartDownload, onBack }: Install
         {/* Need more help? */}
         <div className="text-center mb-16">
           <p className="text-slate-500 text-[15px]">
-            Need a detailed tutorial? <a href="#" className="text-blue-500 font-bold hover:underline inline-flex items-center gap-1 ml-1">Check UniFab guide book</a>
+            Need a detailed tutorial? <a href="https://docs.unifab.ai/en/unifab/download-and-install" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold hover:underline inline-flex items-center gap-1 ml-1">Check UniFab guide book</a>
           </p>
         </div>
 
