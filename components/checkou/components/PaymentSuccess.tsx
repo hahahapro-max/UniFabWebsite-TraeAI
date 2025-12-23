@@ -83,7 +83,7 @@ export const PaymentSuccess: React.FC = () => {
           
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <div className="flex items-center gap-1 text-[#6236ff] font-bold text-lg cursor-pointer hover:opacity-80 transition-opacity">
-              <span>先别着急走，推荐你升级到全新 All-In-One</span>
+              <span>Wait, we recommend upgrading to the all-new All-In-One</span>
               <ChevronDown size={20} />
             </div>
             <LoopingTimer />
@@ -117,9 +117,9 @@ export const PaymentSuccess: React.FC = () => {
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-2xl font-black text-gray-900 mb-3">UniFab All-In-One (Lifetime)</h3>
               <p className="text-[#666] text-sm leading-relaxed mb-6">
-                由于你已经购买了单品，现在升级到 AIO 享受超级折扣！<br />
-                我们推荐这款包含 15 合 1 解决方案和 2 份礼品的超值套餐。<br />
-                <span className="text-gray-400">(超过 60% 的客户选择了它。)</span>
+                Since you've already purchased a single product, upgrade to AIO now and enjoy a super discount!<br />
+                We recommend this value pack which includes a 15-in-1 solution and 2 free gifts.<br />
+                <span className="text-gray-400">(More than 60% of customers chose this.)</span>
               </p>
               
               <div className="flex items-center justify-center md:justify-start gap-4">
