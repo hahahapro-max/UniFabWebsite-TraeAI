@@ -121,7 +121,7 @@ export default function InstallationGuide({ onRestartDownload, onBack }: Install
                       <img src={logoUrl} alt="UniFab" className="w-5 h-5" />
                     </div>
                   <div>
-                    <p className="text-xs font-bold text-slate-800">UniFab_Installer{os === 'win' ? '.exe' : '.dmg'}</p>
+                    <p className="text-xs font-bold text-slate-800">unifab_online_3034{os === 'win' ? '.exe' : '.dmg'}</p>
                     <p className="text-[10px] text-blue-500 font-medium">Open file</p>
                   </div>
                 </div>
@@ -205,7 +205,7 @@ export default function InstallationGuide({ onRestartDownload, onBack }: Install
             <div className="mb-6">
               <h2 className="text-2xl font-black text-slate-900 mb-3">1 Open</h2>
               <p className="text-slate-500 text-[15px] leading-relaxed">
-                Click the browser's upper-right icon or press <span className="font-bold text-slate-800">{os === 'win' ? 'Ctrl + J' : 'Command + Option + L'}</span> to find and launch the downloaded file.
+                Click the browser's upper-right icon or press <span className="font-bold text-slate-800">{os === 'win' ? 'Ctrl + J' : 'Command + Option + L'}</span> to find and launch the downloaded file <span className="font-bold text-slate-800">(unifab_online_3034{os === 'win' ? '.exe' : '.dmg'})</span>.
               </p>
             </div>
             
@@ -232,7 +232,7 @@ export default function InstallationGuide({ onRestartDownload, onBack }: Install
                       <img src={logoUrl} alt="UniFab" className="w-6 h-6" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs font-bold text-slate-800 truncate mb-0.5">UniFab_Installer{os === 'win' ? '.exe' : '.dmg'}</p>
+                      <p className="text-xs font-bold text-slate-800 truncate mb-0.5">unifab_online_3034{os === 'win' ? '.exe' : '.dmg'}</p>
                       <p className="text-[10px] text-slate-400">2.0 MB • Done</p>
                     </div>
                     <div className="flex gap-2 shrink-0">
@@ -278,7 +278,7 @@ export default function InstallationGuide({ onRestartDownload, onBack }: Install
                       <img src={logoUrl} alt="UniFab" className="w-6 h-6 grayscale opacity-60" />
                     </div>
                     <p className="text-[10px] text-slate-600 font-medium mb-4 leading-tight">
-                      "UniFab Installer" is an app downloaded from the Internet. Are you sure you want to open it?
+                      "unifab_online_3034.dmg" is an app downloaded from the Internet. Are you sure you want to open it?
                     </p>
                     <div className="flex flex-col gap-1">
                       <button className="w-full py-1.5 bg-blue-500 text-white text-[10px] font-bold rounded-md shadow-sm">Open</button>
@@ -308,7 +308,7 @@ export default function InstallationGuide({ onRestartDownload, onBack }: Install
                         <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
                         <div className="w-2 h-2 rounded-full bg-green-400"></div>
                      </div>
-                     <div className="text-[10px] text-slate-400 font-medium">UniFab Installer</div>
+                     <div className="text-[10px] text-slate-400 font-medium">unifab_online_3034{os === 'win' ? '.exe' : '.dmg'}</div>
                   </div>
                   <div className="p-6 flex flex-col items-center gap-6">
                      <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center shadow-md">
